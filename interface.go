@@ -1,6 +1,3 @@
-//Flowchart
-//	rect -> rectangle struct (x, y) -> 
-
 package main
 import (
 	"math"
@@ -46,3 +43,9 @@ func main() {
 		calcArea(circle),
 	)
 }
+
+//	rect -> joins rectangle struct -> rect is used as an argument for calcArea -> rect is accepted as a valid argument
+//	since its just two float64 value's -> rect is passed to the nested area function which belongs to the Shape
+//	interface -> rect gets sent to the version of the function for its respective struct -> the function multiplies
+//	the two value's belonging to rect -> this sucsesfully returns a float64 value meeting the criteria of the shape
+// interface.
